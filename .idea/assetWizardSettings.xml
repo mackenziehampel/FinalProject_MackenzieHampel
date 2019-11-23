@@ -86,8 +86,8 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/Final Android/Screen-Shot-2018-09-07-at-8.38.12-PM.png" />
-                                      <entry key="outputName" value="ic_googlelogo2" />
+                                      <entry key="foregroundImage" value="$PROJECT_DIR$/../marland2.png" />
+                                      <entry key="outputName" value="ic_marsland2" />
                                     </map>
                                   </option>
                                 </PersistentState>
