@@ -81,8 +81,11 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
         final Product product = products.get(position);
         if (product != null) {
             holder.product = product;
-            holder.txtName.setText(product.getEarth_date());
-            holder.txtDescription.setText(product.getId());
+            holder.txtName.setText("Date photographed: " + product.getEarth_date());
+            holder.txtDescription.setText("Lot id: " + product.getId());
+            double p = Double.parseDouble(product.getPrice());
+
+            holder.txtPrice.setText("$"+ String.format("%,.2f", p));
             String imgUrl = product.getImg_src();
             String url = imgUrl.replaceAll("^\"|\"$", "");
             new DownloadImageTask(holder.img).execute(url);

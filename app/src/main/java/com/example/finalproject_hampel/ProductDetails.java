@@ -25,7 +25,6 @@ import com.example.finalproject_hampel.db.Product;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Random;
 
 
 /**
@@ -39,7 +38,7 @@ public class ProductDetails extends Fragment {
     private ArrayList<String> myCartArray = new ArrayList<>(); //keys
     private Product product;
     private int product_pk;
-    private TextView txt1, txt2, txt3, txt4, txt5;
+    private TextView txt1, txt2, txt3, txt4, txt5, txt6;
     private ImageView imageView;
 
     public ProductDetails() {
@@ -56,6 +55,7 @@ public class ProductDetails extends Fragment {
         txt3 = (TextView)root.findViewById(R.id.txt3);
         txt4 = (TextView)root.findViewById(R.id.txt4);
         txt5 = (TextView)root.findViewById(R.id.txt5);
+        txt6 = (TextView)root.findViewById(R.id.txt6);
         imageView = (ImageView) root.findViewById(R.id.img_main);
 
 
@@ -79,13 +79,10 @@ public class ProductDetails extends Fragment {
                         public void run() {
                             txt1.setText("Lot Id#: " + product.getId());
                             txt2.setText("Date Listed: "+product.getEarth_date());
-                            int price = getRandomPriceInRange(20, 70000000);
-
-                            txt3.setText("Listed Price: $" + price + "USD");
-                            int acres = getRandomPriceInRange(1, 50);
-                            txt4.setText("Acres: "+ acres);
-                            double pricePerSqFt = (price / (acres * 43560));
-                            txt5.setText("Price/Square Foot: $" + pricePerSqFt);
+                            txt3.setText("Listed Price: $" + product.getPrice() + "USD");
+                            txt4.setText("Acres: "+ product.getAcres());
+                            txt5.setText("Price/Square Foot: $" + product.getPricePerSqFt());
+                            txt6.setText("Photographed by: " + product.getRover_name() + " rover");
                             String url = product.getImg_src();
                             new DownloadImageTask(imageView).execute(url);
 
@@ -158,12 +155,7 @@ public class ProductDetails extends Fragment {
 
         return hasImage;
     }
-    private static int getRandomPriceInRange(int min, int max){
 
-        Random r = new Random();
-        return r.nextInt((max-min) + 1)+min;
-
-    }
 
     public boolean saveArray()
     {

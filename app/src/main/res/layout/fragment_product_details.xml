@@ -19,7 +19,7 @@
             android:id="@+id/toolbarDetails"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="#4D4C4C"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -29,19 +29,20 @@
         android:layout_height="match_parent"
 
 
+        android:background="#2C2B2B"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FCF5F2F2"
+            android:background="#00F5F2F2"
             android:orientation="vertical"
             tools:context=".ProductDetails">
 
             <ImageView
                 android:id="@+id/img_main"
                 android:layout_width="400dp"
-                android:layout_height="300dp"
+                android:layout_height="250dp"
                 android:contentDescription="@string/app_name"
                 android:scaleType="centerCrop" />
 
@@ -52,7 +53,9 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:text="TextView" />
+                android:background="#00AFAAAA"
+                android:text="TextView"
+                android:textColor="#FCB9B9B9" />
 
             <TextView
                 android:id="@+id/txt2"
@@ -61,7 +64,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="#FCB9B9B9" />
 
             <TextView
                 android:id="@+id/txt3"
@@ -70,7 +74,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="#FCB9B9B9" />
 
             <TextView
                 android:id="@+id/txt4"
@@ -79,7 +84,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="#FCB9B9B9" />
 
             <TextView
                 android:id="@+id/txt5"
@@ -88,14 +94,25 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="#FCB9B9B9" />
+
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="TextView"
+                android:textColor="#FCB9B9B9" />
 
             <Button
                 android:id="@+id/btnAddToCart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
                 android:background="#3F51B5"
                 android:text="Add to Cart"

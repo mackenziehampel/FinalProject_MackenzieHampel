@@ -3,12 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#1F1E1E"
     android:orientation="vertical"
     tools:context=".HomeFragment">
+
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="MY Cart" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#465E5B5B"
+        android:gravity="center"
+        android:shadowColor="#B96D47"
+        android:text="My Cart"
+        android:textColor="#A95937"
+        android:textColorHighlight="#F3C25F41"
+        android:textSize="30sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -34,6 +44,8 @@
         android:id="@+id/btnPay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PAY - with paypal" />
+        android:backgroundTint="#3F51B5"
+        android:text="PAY - with paypal"
+        android:textColor="#FCEEECEC" />
 
 </LinearLayout>

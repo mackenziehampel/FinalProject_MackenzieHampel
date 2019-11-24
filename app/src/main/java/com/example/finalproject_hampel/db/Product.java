@@ -11,6 +11,10 @@ public class Product {
     private String id;
     private String img_src;
     private String earth_date;
+    private String rover_name;
+    private String price;
+    private String acres;
+    private String pricePerSqFt;
 
     @Override
     public String toString() {
@@ -22,10 +26,14 @@ public class Product {
                 '}';
     }
 
-    public Product(String id, String img_src, String earth_date) {
+    public Product(String id, String img_src, String earth_date, String rover_name, String price, String acres, String pricePerSqFt) {
         this.id = id;
         this.img_src = img_src;
         this.earth_date = earth_date;
+        this.rover_name = rover_name;
+        this.price = price;
+        this.acres = acres;
+        this.pricePerSqFt = pricePerSqFt;
     }
 
     public int getP_id() {
@@ -58,5 +66,36 @@ public class Product {
 
     public void setEarth_date(String earth_date) {
         this.earth_date = earth_date;
+    }
+    public String getRover_name() {
+        return rover_name;
+    }
+
+    public void setRover_name(String rover_name) {
+        this.rover_name = rover_name;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getAcres() {
+        return acres;
+    }
+
+    public void setAcres(String acres) {
+        this.acres = acres;
+    }
+
+    public String getPricePerSqFt() {
+        return pricePerSqFt;
+    }
+
+    public void setPricePerSqFt(String pricePerSqFt) {
+        this.pricePerSqFt = pricePerSqFt;
     }
 }
