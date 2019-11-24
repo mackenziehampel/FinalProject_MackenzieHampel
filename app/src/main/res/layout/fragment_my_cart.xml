@@ -5,12 +5,23 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".HomeFragment">
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="MY Cart" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+
 
     <EditText
         android:id="@+id/txtTotal"

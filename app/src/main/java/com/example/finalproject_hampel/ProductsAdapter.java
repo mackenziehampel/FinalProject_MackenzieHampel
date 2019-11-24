@@ -73,13 +73,6 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_product, parent, false);
         return new ViewHolder(view);
-//        Context context = parent.getContext();
-//        LayoutInflater inflater = LayoutInflater.from(context);
-//        View productView = inflater.inflate(R.layout.item_product, parent, false);
-//        ViewHolder viewHolder = new ViewHolder(productView);
-//        return viewHolder;
-
-
     }
 
     @Override
@@ -116,8 +109,6 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
                             .add(android.R.id.content, prodDeets)
                             .addToBackStack(null)
                             .commit();
-
-
 
                 }
 
