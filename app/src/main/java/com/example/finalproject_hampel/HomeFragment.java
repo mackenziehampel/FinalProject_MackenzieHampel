@@ -2,12 +2,11 @@ package com.example.finalproject_hampel;
 
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
 
 
 /**
@@ -16,6 +15,7 @@ import android.view.ViewGroup;
 public class HomeFragment extends Fragment {
 
     private View root;
+
 
     public HomeFragment() {
         // Required empty public constructor

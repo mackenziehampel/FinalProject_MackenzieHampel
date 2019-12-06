@@ -40,10 +40,9 @@ public class ProductsDataClass extends AsyncTask<String, Double, String>{
 
         try{//https://weber.instructure.com/api/v1/courses
 
-            URL url = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=0&api_key=pU2sXjt6TjfNMRpwLFBBDwJxLMZP0SxWIPf301LN");  //pU2sXjt6TjfNMRpwLFBBDwJxLMZP0SxWIPf301LN//https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY
+            URL url = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=0&api_key=pU2sXjt6TjfNMRpwLFBBDwJxLMZP0SxWIPf301LN");  //_key=DEMO_KEY
             HttpsURLConnection connection = (HttpsURLConnection)url.openConnection();
             connection.setRequestMethod("GET");
-         //   connection.setRequestProperty("Authorization", "Bearer " + "14~sHRHy5YEDftmRL8elIdXNUMoSEB0SZNMP1c2e23TOo7Bxgfqvt28a18k73V5mUJd");
 
             connection.connect();
 
@@ -101,13 +100,10 @@ public class ProductsDataClass extends AsyncTask<String, Double, String>{
             JsonElement id = slide.get("id");
             JsonElement rover = slide.get("rover");
 
-            //TODO: get name of rover?  Rover Returns {"id":5,"name":"Curiosity","landing_date":"2012-08-06","launch_date":"2011-11-26","status":"active","max_sol":2540,"max_date":"2019-09-28","total_photos":366206,"cameras":[{"name":"FHAZ","full_name":"Front Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear Hazard Avoidance Camera"}]}
-           //Probably will have to pop that open and look around
-
             Log.d(TAG, "parseJson: PAUSE");
             JsonObject rov = (JsonObject)rover;
             JsonElement name2 = rov.get("name");
-            int priceInt = (getRandomPriceInRange(20, 70000000));
+            int priceInt = (getRandomPriceInRange(20, 70000));
             int acresInt = getRandomPriceInRange(1, 50);
             String pricePerSqFt = Double.toString(priceInt / (acresInt * 43560));
             String price = Integer.toString(priceInt);

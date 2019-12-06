@@ -41,10 +41,10 @@ public class ProductDetails extends Fragment {
     private TextView txt1, txt2, txt3, txt4, txt5, txt6;
     private ImageView imageView;
 
+
     public ProductDetails() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -79,7 +79,7 @@ public class ProductDetails extends Fragment {
                         public void run() {
                             txt1.setText("Lot Id#: " + product.getId());
                             txt2.setText("Date Listed: "+product.getEarth_date());
-                            txt3.setText("Listed Price: $" + product.getPrice() + "USD");
+                            txt3.setText("Listed Price: $" + product.getPrice() + " USD");
                             txt4.setText("Acres: "+ product.getAcres());
                             txt5.setText("Price/Square Foot: $" + product.getPricePerSqFt());
                             txt6.setText("Photographed by: " + product.getRover_name() + " rover");
@@ -99,6 +99,18 @@ public class ProductDetails extends Fragment {
         addToMyCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //pull out and manipulate
+                Context context = getContext();
+                SharedPreferences mSharedPreference1 = PreferenceManager.getDefaultSharedPreferences(context);
+                float fTotal = mSharedPreference1.getFloat("CartTotal", 0);
+                fTotal += (float)Integer.parseInt(product.getPrice());
+
+                //throwback in
+                SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+                SharedPreferences.Editor mEdit1 = sp.edit();
+                mEdit1.putFloat("CartTotal", fTotal);
+                mEdit1.commit();
 
                 //add to my cart array if item doesn't exist.
                 String prodID =  Integer.toString(product.getP_id());

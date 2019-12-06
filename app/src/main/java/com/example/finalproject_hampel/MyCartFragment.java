@@ -33,6 +33,7 @@ import java.util.List;
 public class MyCartFragment extends DialogFragment {
     private View root;
     private Button btn;
+    private TextView txtTotal;
     private RecyclerView recyclerView;
     private CartAdapter cartAdapter;
     private ArrayList<String> myCartArray = new ArrayList<>();
@@ -45,14 +46,11 @@ public class MyCartFragment extends DialogFragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         root = inflater.inflate(R.layout.fragment_my_cart, container, false);
-
-//        txt1 = (TextView)root.findViewById(R.id.)
 
         btn = (Button)root.findViewById(R.id.btnPay);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -62,10 +60,9 @@ public class MyCartFragment extends DialogFragment {
                 startActivity(intent);
             }
         });
-
+//set CartTotal to zero here
         getActivity().setTitle("My Cart");
-        recyclerView = (RecyclerView)root.findViewById(R.id.rvCart);
-      //  cartAdapter.context  = getActivity().getApplicationContext();
+        recyclerView = (RecyclerView)root.findViewById(R.id.rvAccount);
 
         loadArray(getActivity().getApplicationContext());
 
@@ -93,8 +90,10 @@ public class MyCartFragment extends DialogFragment {
 
             }
 
-        //     cartAdapter.setProducts(products);
-
+        txtTotal = (TextView)root.findViewById(R.id.txtTotal);
+        SharedPreferences mSharedPreference1 = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
+        float total = mSharedPreference1.getFloat("CartTotal", 0);
+        txtTotal.setText("Total: " + total + " USD");
 
         return root;
     }
@@ -106,6 +105,7 @@ public class MyCartFragment extends DialogFragment {
 
         cartAdapter = new CartAdapter();
         cartAdapter.setProducts(products);
+        cartAdapter.context = context;
 
         if(columnCount <= 1){
             recyclerView.setLayoutManager(new LinearLayoutManager(context));
@@ -113,10 +113,6 @@ public class MyCartFragment extends DialogFragment {
         }else {
             recyclerView.setLayoutManager(new GridLayoutManager(context, columnCount));
         }
-
-
-        //AutoFitGridLayoutManager layoutManager = new AutoFitGridLayoutManager(getContext(), 500);
-       // recyclerView.setLayoutManager(layoutManager);
 
         recyclerView.setAdapter(cartAdapter);
         recyclerView.setHasFixedSize(false);
@@ -135,7 +131,7 @@ public class MyCartFragment extends DialogFragment {
 
     public  void loadArray(Context mContext)
     {
-        SharedPreferences mSharedPreference1 =   PreferenceManager.getDefaultSharedPreferences(mContext);
+        SharedPreferences mSharedPreference1 = PreferenceManager.getDefaultSharedPreferences(mContext);
         if(myCartArray.size() > 0) {
             myCartArray.clear();
         }

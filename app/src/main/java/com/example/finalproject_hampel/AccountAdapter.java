@@ -1,13 +1,10 @@
 package com.example.finalproject_hampel;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -20,15 +17,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
+public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.ViewHolder> {
 
     private List<Product> products;
-    private ArrayList<String> myCartArray = new ArrayList<>(); //keys
+    private ArrayList<String> myAccountArray = new ArrayList<>(); //keys
     private float total = 0;
 
-    public CartAdapter() {
-      //TODO: fix this
+    public AccountAdapter() {
     }
+
     public Context context;
 
     public void setProducts(ArrayList<Product>products){
@@ -47,21 +44,17 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        public TextView txtName, txtDescription, txtPrice, txtTotal;
+        public TextView txtName, txtDescription, txtPrice;
         public View root;
         public Product product;
-        public Button btnDelete;
-
-
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             root = itemView;
 
-            txtName = (TextView)root.findViewById(R.id.txtName);
-            txtDescription = (TextView)root.findViewById(R.id.txtDescription);
-            txtPrice = (TextView)root.findViewById(R.id.txtPrice);
-            btnDelete = (Button)root.findViewById(R.id.btnDelete);
+            txtName = (TextView)root.findViewById(R.id.txtNameAccount);
+            txtDescription = (TextView)root.findViewById(R.id.txtDescriptionAccount);
+            txtPrice = (TextView)root.findViewById(R.id.txtPriceAccount);
 
 
         }
@@ -73,7 +66,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //cellforrowat
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_cart, parent, false);
+                .inflate(R.layout.item_myaccount, parent, false);
         total = 0;
         return new ViewHolder(view);
 
@@ -93,37 +86,12 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
             holder.txtPrice.setText("$"+ String.format("%,.2f", p));
 
 
-
-            holder.btnDelete.setOnClickListener(new View.OnClickListener(){
-                @Override
-                public void onClick(View v) {
-                    /// button click event
-                    loadArray(context);
-                    for(int i = 0; i < myCartArray.size(); i++){
-                        String id = myCartArray.get(i);
-                        int idINT = Integer.parseInt(id);
-                        int positionINT = holder.getAdapterPosition();
-                        int holderID = product.getP_id();
-                        if(idINT == holderID ){
-                            myCartArray.remove(i);
-                            saveArray();
-                            //notifyDataSetChanged();
-
-                            break;
-                        }
-                    }
-                }
-            });
-
             holder.root.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view){
                     //DID SELECT ROW AT
 
                     Bundle bundle = new Bundle();
-                   // bundle.putInt("product_PK", product.getP_id());
-
-
                     ProductDetails prodDeets = new ProductDetails();
                     prodDeets.setArguments(bundle);
                     AppCompatActivity activity = (AppCompatActivity) view.getContext();
@@ -141,39 +109,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         }
     }
 
-
-    public boolean saveArray()
-    {
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor mEdit1 = sp.edit();
-        /* sKey is an array */
-        mEdit1.putInt("Product_size", myCartArray.size());
-
-        for(int i=0;i<myCartArray.size();i++)
-        {
-            mEdit1.remove("Product_" + i);
-            mEdit1.putString("Product_" + i, myCartArray.get(i));
-        }
-
-        return mEdit1.commit();
-    }
-
-    public  void loadArray(Context mContext)
-    {
-        SharedPreferences mSharedPreference1 =   PreferenceManager.getDefaultSharedPreferences(mContext);
-        if( myCartArray.size() > 0) {
-
-            myCartArray.clear();
-        }
-        int size = mSharedPreference1.getInt("Product_size", 0);
-        if (size != 0) {
-            for(int i=0;i<size;i++)
-            {
-                myCartArray.add(mSharedPreference1.getString("Product_" + i, null));
-            }
-        }
-
-    }
 
     @Override
     public int getItemCount() {

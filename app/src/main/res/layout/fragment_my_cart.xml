@@ -25,7 +25,7 @@
         android:layout_height="400dp">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvCart"
+            android:id="@+id/rvAccount"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="vertical" />
@@ -37,15 +37,24 @@
         android:id="@+id/txtTotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="test"
+        android:textColor="#4CAF50"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btnPay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
         android:backgroundTint="#3F51B5"
-        android:text="PAY - with paypal"
+        android:text="Purchase Land - paypal"
         android:textColor="#FCEEECEC" />
 
 </LinearLayout>

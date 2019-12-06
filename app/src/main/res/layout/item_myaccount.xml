@@ -22,14 +22,14 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="267dp"
+                android:layout_width="365dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/txtName"
+                    android:id="@+id/txtNameAccount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -37,7 +37,7 @@
                     android:textColor="#FCFFFFFF" />
 
                 <TextView
-                    android:id="@+id/txtDescription"
+                    android:id="@+id/txtDescriptionAccount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -45,25 +45,13 @@
                     android:textColor="#FFFFFF" />
 
                 <TextView
-                    android:id="@+id/txtPrice"
+                    android:id="@+id/txtPriceAccount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Price:"
                     android:textColor="#FDFDFD" />
             </LinearLayout>
-
-            <Button
-                android:id="@+id/btnDelete"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_marginRight="15dp"
-                android:layout_weight="1"
-                android:backgroundTint="#F44336"
-                android:shadowColor="#00BCD4"
-                android:text="Remove"
-                android:textColor="#F5F2F2" />
 
         </LinearLayout>
 
