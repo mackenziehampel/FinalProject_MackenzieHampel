@@ -39,7 +39,7 @@ public class ProductDetails extends Fragment {
     private Product product;
     private int product_pk;
     private TextView txt1, txt2, txt3, txt4, txt5, txt6;
-    private ImageView imageView;
+    private ImageView imgView;
 
 
     public ProductDetails() {
@@ -56,8 +56,7 @@ public class ProductDetails extends Fragment {
         txt4 = (TextView)root.findViewById(R.id.txt4);
         txt5 = (TextView)root.findViewById(R.id.txt5);
         txt6 = (TextView)root.findViewById(R.id.txt6);
-        imageView = (ImageView) root.findViewById(R.id.img_main);
-
+        imgView = (ImageView) root.findViewById(R.id.img_main);
 
         //get my cart array
         loadArray(getActivity().getApplicationContext());
@@ -83,8 +82,9 @@ public class ProductDetails extends Fragment {
                             txt4.setText("Acres: "+ product.getAcres());
                             txt5.setText("Price/Square Foot: $" + product.getPricePerSqFt());
                             txt6.setText("Photographed by: " + product.getRover_name() + " rover");
-                            String url = product.getImg_src();
-                            new DownloadImageTask(imageView).execute(url);
+                            String imgUrl = product.getImg_src();
+                            String url = imgUrl.replaceAll("^\"|\"$", "");
+                            new DownloadImageTask(imgView).execute(url);
 
                         }
                     });

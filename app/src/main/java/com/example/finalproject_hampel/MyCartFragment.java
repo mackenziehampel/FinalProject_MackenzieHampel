@@ -58,9 +58,10 @@ public class MyCartFragment extends DialogFragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), PayPalActivity.class);
                 startActivity(intent);
+
             }
         });
-//set CartTotal to zero here
+
         getActivity().setTitle("My Cart");
         recyclerView = (RecyclerView)root.findViewById(R.id.rvAccount);
 

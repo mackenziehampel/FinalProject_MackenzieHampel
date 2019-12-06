@@ -40,23 +40,25 @@ public class ProductsDataClass extends AsyncTask<String, Double, String>{
 
         try{//https://weber.instructure.com/api/v1/courses
 
-            URL url = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=0&api_key=pU2sXjt6TjfNMRpwLFBBDwJxLMZP0SxWIPf301LN");  //_key=DEMO_KEY
-            HttpsURLConnection connection = (HttpsURLConnection)url.openConnection();
-            connection.setRequestMethod("GET");
 
-            connection.connect();
+                URL url = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=0&api_key=pU2sXjt6TjfNMRpwLFBBDwJxLMZP0SxWIPf301LN");  //_key=DEMO_KEY
+                HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+                connection.setRequestMethod("GET");
 
-            int status = connection.getResponseCode();
-            Log.d(TAG, "doInBackground: STATUS" + status);
-            switch (status){
-                case 200:
-                    BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-                    rawJSON = br.readLine();
-                    if(rawJSON == null) {
-                        Log.d(TAG, "doInBackground: " + rawJSON.toString());
-                    }
-                    break;
-            }
+                connection.connect();
+
+                int status = connection.getResponseCode();
+                Log.d(TAG, "doInBackground: STATUS" + status);
+                switch (status) {
+                    case 200:
+                        BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                        rawJSON = br.readLine();
+                        if (rawJSON == null) {
+                            Log.d(TAG, "doInBackground: " + rawJSON.toString());
+                        }
+                        break;
+                }
+
 
         } catch (Exception e){
             Log.d(TAG, "doInBackground: " + e.toString());
@@ -104,8 +106,10 @@ public class ProductsDataClass extends AsyncTask<String, Double, String>{
             JsonObject rov = (JsonObject)rover;
             JsonElement name2 = rov.get("name");
             int priceInt = (getRandomPriceInRange(20, 70000));
-            int acresInt = getRandomPriceInRange(1, 50);
-            String pricePerSqFt = Double.toString(priceInt / (acresInt * 43560));
+            int acresInt = getRandomPriceInRange(1, 20);
+            int l = acresInt * 43560;
+            double rr = (double)priceInt / l;
+            String pricePerSqFt = rr + "";
             String price = Integer.toString(priceInt);
             String acres = Integer.toString(acresInt);
 
@@ -139,7 +143,7 @@ public class ProductsDataClass extends AsyncTask<String, Double, String>{
 
                 count++;
 
-                if(count == 17){
+                if(count == 8){
 
                     if(newRes.endsWith(","))
                     {

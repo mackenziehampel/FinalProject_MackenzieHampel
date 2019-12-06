@@ -46,17 +46,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/CartAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="144" column="4" selection-start-line="144" selection-start-column="4" selection-end-line="158" selection-end-column="5" />
+            <state relative-caret-position="145">
+              <caret line="105" column="47" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/AccountAdapter.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="119">
+              <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/AccountFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="132" selection-start-line="132" selection-end-line="132" />
+            <state relative-caret-position="151">
+              <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="110" column="24" selection-start-line="108" selection-start-column="30" selection-end-line="112" selection-end-column="32" />
+            <state relative-caret-position="127">
+              <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,66 +86,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_account.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_product_details.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+            <state relative-caret-position="1530">
+              <caret line="110" column="12" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_my_cart.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="619">
+              <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsDataClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+            <state relative-caret-position="285">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/PayPalActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="228" column="30" selection-start-line="228" selection-start-column="30" selection-end-line="228" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2250#3503#0" expanded="true" />
-                <element signature="e#3502#3503#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_myaccount.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/MyCartFragment.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="139" selection-start-line="139" selection-end-line="139" />
+            <state relative-caret-position="300">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1166#3944#0" expanded="true" />
+                <element signature="e#2138#3179#0" expanded="true" />
+                <element signature="e#2693#3112#0" expanded="true" />
+                <element signature="e#3111#3112#0" expanded="true" />
+                <element signature="e#3178#3179#0" expanded="true" />
+                <element signature="e#3943#3944#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/HomeFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -162,21 +166,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bundle</find>
-      <find>preferences</find>
-      <find>SharedPreferences</find>
-      <find>myCartArray.add</find>
-      <find>clickListener</find>
-      <find>click</find>
-      <find>holder</find>
-      <find>btnDelete</find>
-      <find>h</find>
-      <find>notifyDataSetChanged</find>
-      <find>addItems</find>
       <find>context</find>
       <find>additem</find>
       <find>thingToBuy</find>
-      <find>btn</find>
       <find>rvcart</find>
       <find>saveArr</find>
       <find>btnPay</find>
@@ -186,12 +178,24 @@
       <find>btnpay</find>
       <find>saveArray</find>
       <find>loadarray</find>
-      <find>loadarr</find>
       <find>loadArray</find>
-      <find>CartTotal</find>
       <find>save</find>
       <find>loadMyCartArray</find>
       <find>loadMyAccountArray</find>
+      <find>button</find>
+      <find>glide</find>
+      <find>CartTotal</find>
+      <find>ProductsData</find>
+      <find>CartTOtal</find>
+      <find>btn</find>
+      <find>onclicke</find>
+      <find>once</find>
+      <find>image</find>
+      <find>loadarr</find>
+      <find>holder.</find>
+      <find>downloa</find>
+      <find>imageView</find>
+      <find>acres</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/build/generated/res/resValues/debug</dir>
@@ -218,37 +222,37 @@
         <option value="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_marsland.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_marsland_round.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/db/ProductDAO.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/db/Product.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_product_details.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_products.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_product.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_cart.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/HomeFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsDataClass.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/CartAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductDetails.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_cart.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/MyCartFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pay_pal.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_account.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/AccountFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_myaccount.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/AccountAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/PayPalActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/MyCartFragment.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/CartAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductDetails.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_product_details.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsDataClass.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
+    <option name="x" value="87" />
     <option name="y" value="23" />
-    <option name="width" value="1357" />
+    <option name="width" value="1376" />
     <option name="height" value="811" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -278,7 +282,9 @@
             <path>
               <item name="FinalProject_Hampel" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java (generated)" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="finalproject_hampel" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ProductsAdapter.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="FinalProject_Hampel" type="1abcf292:AndroidViewProjectNode" />
@@ -437,11 +443,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="23" width="1357" height="811" extended-state="0" />
-    <editor active="true" />
+    <frame x="87" y="23" width="1376" height="811" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.0936255" side_tool="true" weight="0.24145962" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8348416" visible="true" weight="0.20988593" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8348416" visible="true" weight="0.22263868" />
       <window_info id="Structure" order="2" sideWeight="0.14484127" side_tool="true" weight="0.22750549" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -450,13 +455,13 @@
       <window_info id="Resources Explorer" order="7" weight="0.329188" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49879518" weight="0.3286119" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.88973385" weight="0.16133519" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.8874525" weight="0.23226704" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49718875" weight="0.32777777" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8730038" visible="true" weight="0.40890124" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5907046" visible="true" weight="0.3991655" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49799198" weight="0.16572239" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.1269962" side_tool="true" visible="true" weight="0.40890124" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.40929535" side_tool="true" visible="true" weight="0.3991655" />
       <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49718875" weight="0.3286119" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4973384" weight="0.28511822" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49657795" weight="0.28511822" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.3286119" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -515,60 +520,55 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsDataClass.java</url>
-          <line>73</line>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/MainActivity.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/CartAdapter.java</url>
-          <line>105</line>
+          <line>116</line>
           <properties />
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/PayPalActivity.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/AccountFragment.java</url>
-          <line>120</line>
-          <properties />
-          <option name="timeStamp" value="95" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/PayPalActivity.java</url>
-          <line>81</line>
-          <properties />
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/MyCartFragment.java</url>
-          <line>139</line>
-          <properties />
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/PayPalActivity.java</url>
-          <line>209</line>
-          <properties />
-          <option name="timeStamp" value="103" />
+          <option name="timeStamp" value="108" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="app">
-        <watch expression="product" language="JAVA" />
-        <watch expression="holder" language="JAVA" />
-        <watch expression="loadArray();" language="JAVA" />
-        <watch expression="myCartArray" language="JAVA" />
-        <watch expression="myAccountArray" language="JAVA" />
+        <watch expression="priceInt" language="JAVA" />
+        <watch expression="acresInt" language="JAVA" />
+        <watch expression="pricePerSqFt" language="JAVA" />
+        <watch expression="l" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>l</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pricePerSqFt</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>acresInt</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>priceInt</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>myAccountArray</expression-string>
         <language-id>JAVA</language-id>
@@ -597,16 +597,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_marsland_foreground.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_marsland.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_marsland_round.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -709,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -734,13 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="692" selection-start-line="692" selection-end-line="692" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -791,14 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
@@ -817,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-29/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -831,30 +792,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsDataClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="98" column="28" lean-forward="true" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.1.0/b9ebb04df2cb0cad4419af3c658690bc82aa5706/fragment-1.1.0-sources.jar!/androidx/fragment/app/Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="1171" column="16" selection-start-line="1171" selection-start-column="16" selection-end-line="1171" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -879,22 +820,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_product_details.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="109" column="12" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -933,23 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/CartAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="144" column="4" selection-start-line="144" selection-start-column="4" selection-end-line="158" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="110" column="24" selection-start-line="108" selection-start-column="30" selection-end-line="112" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/AccountAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
@@ -957,35 +865,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/AccountFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/PayPalActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        <state relative-caret-position="135">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2250#3503#0" expanded="true" />
+            <element signature="e#3502#3503#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="51" column="65" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/add2bdb41de46d90e5d3bd4e75929820/fragment-1.1.0/jars/classes.jar!/androidx/fragment/app/FragmentTransaction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.1.0/b9ebb04df2cb0cad4419af3c658690bc82aa5706/fragment-1.1.0-sources.jar!/androidx/fragment/app/FragmentTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/MyCartFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        <state relative-caret-position="147">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/PayPalActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/AccountFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="228" column="30" selection-start-line="228" selection-start-column="30" selection-end-line="228" selection-end-column="30" />
+        <state relative-caret-position="151">
+          <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2250#3503#0" expanded="true" />
-            <element signature="e#3502#3503#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1166#3944#0" expanded="true" />
+            <element signature="e#2138#3179#0" expanded="true" />
+            <element signature="e#2693#3112#0" expanded="true" />
+            <element signature="e#3111#3112#0" expanded="true" />
+            <element signature="e#3178#3179#0" expanded="true" />
+            <element signature="e#3943#3944#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/CartAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="105" column="47" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_product_details.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="110" column="12" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/finalproject_hampel/ProductsDataClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

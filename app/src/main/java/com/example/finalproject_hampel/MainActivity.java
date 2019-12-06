@@ -1,15 +1,12 @@
 package com.example.finalproject_hampel;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.accounts.Account;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import com.example.finalproject_hampel.db.AppDatabase;
 import com.example.finalproject_hampel.db.Product;
@@ -45,44 +42,43 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = new HomeFragment();
                     break;
                 case R.id.menu_products:
-                    selectedFragment = new ProductsFragment();
-                    task = new ProductsDataClass();
-                    task.setOnProductListComplete(new ProductsDataClass.OnProductListComplete() {
-                        @Override
-                        public void processProductList(Product[] products) {
-                            Log.d("HERE", "processProductList: " + products.length);
-                            final ArrayList<Product> productList = new ArrayList<>();
+                    //pull check
+//                    Context c = getApplicationContext();
+//                    SharedPreferences mSharedPreference1 = PreferenceManager.getDefaultSharedPreferences(c);
+//                    int once = mSharedPreference1.getInt("LoadJSONOnce", 0);
+//                    if (once == 0) {
+                        selectedFragment = new ProductsFragment();
+                        task = new ProductsDataClass();
+                        task.setOnProductListComplete(new ProductsDataClass.OnProductListComplete() {
+                            @Override
+                            public void processProductList(Product[] products) {
+                                Log.d("HERE", "processProductList: " + products.length);
+                                final ArrayList<Product> productList = new ArrayList<>();
 
-                            for(Product product: products){
+                                for (Product product : products) {
 
-                                productList.add(product);
+                                    productList.add(product);
+
+                                }
+                                new Thread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        AppDatabase.getInstance(getApplicationContext())
+                                                .productDAO()
+                                                .insertProducts(productList);
+                                    }
+                                }).start();
 
                             }
-                            new Thread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    AppDatabase.getInstance(getApplicationContext())
-                                            .productDAO()
-                                            .insertProducts(productList);
-                                }
-                            }).start();
+                        });
 
-                        }
-                    });
-
-                    task.execute("");
-
-
-                   // /---------------------
-
-//                RecyclerView rvProducts = (RecyclerView)findViewById(R.id.rvProducts);
-//                //create list  products = getLIST()
-//                  ProductsAdapter adapter = new ProductsAdapter(products); //put products in adapter
-//               rvProducts.setAdapter(adapter);
-//               rvProducts.setLayoutManager(new LinearLayoutManager(this));
-//                //pass this list to the products view
-
-                    //--------------------
+                        task.execute("");
+//                    }
+//                    SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(c);
+//                    SharedPreferences.Editor mEdit1 = sp.edit();
+//                    once = 1;
+//                    mEdit1.putInt("LoadJSONOnce", once);
+//                    mEdit1.commit();
 
                     break;
                 case R.id.menu_myCart:

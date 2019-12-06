@@ -36,7 +36,8 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
     }
 
     public void addItems( List<Product> products) {
-
+        this.myCartArray.clear();
+        loadArray(context);
         notifyDataSetChanged();
     }
 
@@ -98,7 +99,8 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
                 @Override
                 public void onClick(View v) {
                     /// button click event
-                    loadArray(context);
+                    //loadArray(context);
+                    addItems(products);
                     for(int i = 0; i < myCartArray.size(); i++){
                         String id = myCartArray.get(i);
                         int idINT = Integer.parseInt(id);
@@ -107,10 +109,21 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
                         if(idINT == holderID ){
                             myCartArray.remove(i);
                             saveArray();
-                            //notifyDataSetChanged();
 
                             break;
                         }
+                        int price = Integer.parseInt(holder.product.getPrice());
+
+                        SharedPreferences mSharedPreference1 = PreferenceManager.getDefaultSharedPreferences(context);
+                        float fTotal = mSharedPreference1.getFloat("CartTotal", 0);
+                        fTotal -= (float)Integer.parseInt(product.getPrice());
+
+                        //throwback in
+                        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+                        SharedPreferences.Editor mEdit1 = sp.edit();
+                        mEdit1.putFloat("CartTotal", fTotal);
+                        mEdit1.commit();
+                        notifyDataSetChanged();
                     }
                 }
             });
