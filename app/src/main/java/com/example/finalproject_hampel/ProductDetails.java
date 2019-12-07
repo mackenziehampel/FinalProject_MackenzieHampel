@@ -14,9 +14,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
@@ -119,21 +119,11 @@ public class ProductDetails extends Fragment {
                     saveArray();
                     //display dialog saying added to cart successful
 
-                    new AlertDialog.Builder(getContext())
-                            .setTitle("Success")
-                            .setMessage("This lot was successfully added to your cart.")
-                            // A null listener allows the button to dismiss the dialog and take no further action.
-                            .setNegativeButton(android.R.string.ok, null)
-                            .setIcon(android.R.drawable.ic_dialog_alert)
-                            .show();
+                    Toast.makeText(getActivity(), "Succesfully added to your cart!",
+                            Toast.LENGTH_LONG).show();
                 } else {
-                    new AlertDialog.Builder(getContext())
-                            .setTitle("Failure")
-                            .setMessage("This lot was already in your cart")
-                            // A null listener allows the button to dismiss the dialog and take no further action.
-                            .setNegativeButton(android.R.string.ok, null)
-                            .setIcon(android.R.drawable.ic_dialog_alert)
-                            .show();
+                    Toast.makeText(getActivity(), "This lot was already in your cart!",
+                            Toast.LENGTH_LONG).show();
                 }
 
             }

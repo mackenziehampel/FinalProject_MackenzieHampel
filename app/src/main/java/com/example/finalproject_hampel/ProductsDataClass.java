@@ -8,7 +8,6 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.google.gson.JsonPrimitive;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -38,10 +37,8 @@ public class ProductsDataClass extends AsyncTask<String, Double, String>{
     @Override
     protected String doInBackground(String... strings) {
 
-        try{//https://weber.instructure.com/api/v1/courses
-
-
-                URL url = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=0&api_key=pU2sXjt6TjfNMRpwLFBBDwJxLMZP0SxWIPf301LN");  //_key=DEMO_KEY
+        try{
+                URL url = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=55&api_key=pU2sXjt6TjfNMRpwLFBBDwJxLMZP0SxWIPf301LN");  //_key=DEMO_KEY
                 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
 
@@ -58,7 +55,6 @@ public class ProductsDataClass extends AsyncTask<String, Double, String>{
                         }
                         break;
                 }
-
 
         } catch (Exception e){
             Log.d(TAG, "doInBackground: " + e.toString());
@@ -94,15 +90,14 @@ public class ProductsDataClass extends AsyncTask<String, Double, String>{
         Iterator i =  jsonArray.iterator();
 
         while(i.hasNext()){
-            JsonObject slide = (JsonObject)i.next();
+            JsonObject obj = (JsonObject)i.next();
 
-            JsonPrimitive a = slide.getAsJsonPrimitive("img_src");
-            JsonElement imageURL = slide.get("img_src");
-            JsonElement earthDate = slide.get("earth_date");
-            JsonElement id = slide.get("id");
-            JsonElement rover = slide.get("rover");
+            JsonElement imageURL = obj.get("img_src");
+            JsonElement earthDate = obj.get("earth_date");
+            JsonElement id = obj.get("id");
+            JsonElement rover = obj.get("rover");
 
-            Log.d(TAG, "parseJson: PAUSE");
+            //nested Json
             JsonObject rov = (JsonObject)rover;
             JsonElement name2 = rov.get("name");
             int priceInt = (getRandomPriceInRange(20, 70000));
@@ -132,6 +127,7 @@ public class ProductsDataClass extends AsyncTask<String, Double, String>{
     }
 
     private String cutResult(String result) {
+
         int count = 0;
         String newRes = new String();
         for (int i=0; i < result.length(); i++)
@@ -140,10 +136,9 @@ public class ProductsDataClass extends AsyncTask<String, Double, String>{
             if (result.charAt(i) == '}' && result.charAt(i + 1) == ']' &&
             result.charAt(i+2) == '}' && result.charAt(i+3)=='}' && result.charAt(i+4)==',')
             {
-
                 count++;
 
-                if(count == 8){
+                if(count == 12){
 
                     if(newRes.endsWith(","))
                     {

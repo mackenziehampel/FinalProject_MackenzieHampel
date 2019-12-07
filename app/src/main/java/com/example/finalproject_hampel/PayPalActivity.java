@@ -77,7 +77,6 @@ public class PayPalActivity extends Activity {
 
                     myAccountArray.add(myCartArray.get(i));
                 }
-//                myAccountArray.addAll(myCartArray); // didn't work once deleted items from my cart array.
 
                 saveMyAccountArray();
 
